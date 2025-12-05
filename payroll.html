@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR System - Payroll</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>ModernTech HR System</h1>
+        <p>Employee Management System</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="employees.html">Employees</a> |
+        <a href="payroll.html">Payroll</a> |
+        <a href="leave.html">Time Off</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="reports.html">Reports</a>
+    </nav>
+
+    <hr>
+
+    <!-- Payroll Section -->
+    <section id="payroll">
+        <h2>Payroll Management</h2>
+        
+        <h3>Current Payroll Data</h3>
+        <table border="1" width="100%">
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Hours Worked</th>
+                <th>Leave Deductions</th>
+                <th>Final Salary</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Sibongile Nkosi</td>
+                <td>160</td>
+                <td>8</td>
+                <td>R69,500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lungile Moyo</td>
+                <td>150</td>
+                <td>10</td>
+                <td>R79,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Thabo Molefe</td>
+                <td>170</td>
+                <td>4</td>
+                <td>R54,800</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Keshav Naidoo</td>
+                <td>165</td>
+                <td>6</td>
+                <td>R59,700</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Zanele Khumalo</td>
+                <td>158</td>
+                <td>5</td>
+                <td>R57,850</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sipho Zulu</td>
+                <td>168</td>
+                <td>2</td>
+                <td>R64,800</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Naledi Moeketsi</td>
+                <td>175</td>
+                <td>3</td>
+                <td>R71,800</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Farai Gumbo</td>
+                <td>160</td>
+                <td>0</td>
+                <td>R56,000</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Karabo Dlamini</td>
+                <td>155</td>
+                <td>5</td>
+                <td>R61,500</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Fatima Patel</td>
+                <td>162</td>
+                <td>4</td>
+                <td>R57,750</td>
+            </tr>
+        </table>
+
+        <h3>Payroll Calculator</h3>
+        <form>
+            <p>
+                <label>Employee: 
+                    <select name="employee">
+                        <option>Sibongile Nkosi</option>
+                        <option>Lungile Moyo</option>
+                        <option>Thabo Molefe</option>
+                        <option>Keshav Naidoo</option>
+                        <option>Zanele Khumalo</option>
+                        <option>Sipho Zulu</option>
+                        <option>Naledi Moeketsi</option>
+                        <option>Farai Gumbo</option>
+                        <option>Karabo Dlamini</option>
+                        <option>Fatima Patel</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Hours Worked: <input type="number" value="160"></label>
+            </p>
+            <p>
+                <label>Overtime Hours: <input type="number" value="0"></label>
+            </p>
+            <p>
+                <label>Month: <input type="month" value="2024-12"></label>
+            </p>
+            <input type="submit" value="Calculate Payroll">
+        </form>
+
+        <h3>Generate Digital Payslip</h3>
+        <form>
+            <p>
+                <label>Select Employee: 
+                    <select>
+                        <option>Sibongile Nkosi</option>
+                        <option>Lungile Moyo</option>
+                        <option>Thabo Molefe</option>
+                        <option>Keshav Naidoo</option>
+                        <option>Zanele Khumalo</option>
+                        <option>Sipho Zulu</option>
+                        <option>Naledi Moeketsi</option>
+                        <option>Farai Gumbo</option>
+                        <option>Karabo Dlamini</option>
+                        <option>Fatima Patel</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Pay Period: <input type="month"></label>
+            </p>
+            <input type="submit" value="Generate Payslip">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>ModernTech HR System</strong></p>
+        <p>Proof of Concept - Front End Only</p>
+        <p>© 2024 ModernTech Solutions</p>
+        <p>
+            <a href="index.html">Dashboard</a> |
+            <a href="employees.html">Employees</a> |
+            <a href="payroll.html">Payroll</a> |
+            <a href="leave.html">Time Off</a> |
+            <a href="attendance.html">Attendance</a> |
+            <a href="reports.html">Reports</a>
+        </p>
+    </footer>
+</body>
+</html>

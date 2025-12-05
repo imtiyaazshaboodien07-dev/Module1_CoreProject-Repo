@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR System - Reports</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>ModernTech HR System</h1>
+        <p>Employee Management System</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="employees.html">Employees</a> |
+        <a href="payroll.html">Payroll</a> |
+        <a href="leave.html">Time Off</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="reports.html">Reports</a>
+    </nav>
+
+    <hr>
+
+    <!-- Reports Section -->
+    <section id="reports">
+        <h2>Reports</h2>
+        
+        <h3>Generate Reports</h3>
+        <form>
+            <p>
+                <label>Report Type: 
+                    <select>
+                        <option>Employee Directory</option>
+                        <option>Payroll Summary</option>
+                        <option>Attendance Report</option>
+                        <option>Leave Summary</option>
+                        <option>Department Performance</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Start Date: <input type="date"></label>
+            </p>
+            <p>
+                <label>End Date: <input type="date"></label>
+            </p>
+            <p>
+                <label>Format: 
+                    <select>
+                        <option>HTML</option>
+                        <option>PDF</option>
+                        <option>Excel</option>
+                    </select>
+                </label>
+            </p>
+            <input type="submit" value="Generate Report">
+        </form>
+
+        <h3>Sample Reports</h3>
+        
+        <h4>Employee Summary Report</h4>
+        <table border="1" width="100%">
+            <tr>
+                <th>Department</th>
+                <th>Employee Count</th>
+                <th>Average Salary</th>
+                <th>Total Salary</th>
+            </tr>
+            <tr>
+                <td>Development</td>
+                <td>2</td>
+                <td>R71,000</td>
+                <td>R142,000</td>
+            </tr>
+            <tr>
+                <td>HR</td>
+                <td>1</td>
+                <td>R80,000</td>
+                <td>R80,000</td>
+            </tr>
+            <tr>
+                <td>Marketing</td>
+                <td>2</td>
+                <td>R57,000</td>
+                <td>R114,000</td>
+            </tr>
+            <tr>
+                <td>Sales</td>
+                <td>1</td>
+                <td>R60,000</td>
+                <td>R60,000</td>
+            </tr>
+        </table>
+
+        <h4>Monthly Payroll Summary</h4>
+        <table border="1" width="100%">
+            <tr>
+                <th>Employee</th>
+                <th>Base Salary</th>
+                <th>Hours Worked</th>
+                <th>Deductions</th>
+                <th>Final Salary</th>
+            </tr>
+            <tr>
+                <td>Sibongile Nkosi</td>
+                <td>R70,000</td>
+                <td>160</td>
+                <td>R500</td>
+                <td>R69,500</td>
+            </tr>
+            <tr>
+                <td>Lungile Moyo</td>
+                <td>R80,000</td>
+                <td>150</td>
+                <td>R1,000</td>
+                <td>R79,000</td>
+            </tr>
+            <tr>
+                <td>Thabo Molefe</td>
+                <td>R55,000</td>
+                <td>170</td>
+                <td>R200</td>
+                <td>R54,800</td>
+            </tr>
+        </table>
+
+        <h4>Attendance Summary</h4>
+        <ul>
+            <li>Total Employees: 10</li>
+            <li>Average Working Hours: 162.3 hours/month</li>
+            <li>Total Leave Days Taken: 47 days</li>
+            <li>Attendance Rate: 92.5%</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>ModernTech HR System</strong></p>
+        <p>Proof of Concept - Front End Only</p>
+        <p>© 2024 ModernTech Solutions</p>
+        <p>
+            <a href="index.html">Dashboard</a> |
+            <a href="employees.html">Employees</a> |
+            <a href="payroll.html">Payroll</a> |
+            <a href="leave.html">Time Off</a> |
+            <a href="attendance.html">Attendance</a> |
+            <a href="reports.html">Reports</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR System - Employees</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>ModernTech HR System</h1>
+        <p>Employee Management System</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="employees.html">Employees</a> |
+        <a href="payroll.html">Payroll</a> |
+        <a href="leave.html">Time Off</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="reports.html">Reports</a>
+    </nav>
+
+    <hr>
+
+    <!-- Employees Section -->
+    <section id="employees">
+        <h2>Employee Management</h2>
+        
+        <h3>Search Employee</h3>
+        <form>
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+            <input type="submit" value="Search">
+        </form>
+
+        <h3>Employee List</h3>
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Contact Email</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sibongile Nkosi</td>
+                    <td>Development</td>
+                    <td>Software Engineer</td>
+                    <td>sibongile.nkosi@moderntech.com</td>
+                    <td>R70,000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lungile Moyo</td>
+                    <td>HR</td>
+                    <td>HR Manager</td>
+                    <td>lungile.moyo@moderntech.com</td>
+                    <td>R80,000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Thabo Molefe</td>
+                    <td>QA</td>
+                    <td>Quality Analyst</td>
+                    <td>thabo.molefe@moderntech.com</td>
+                    <td>R55,000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Keshav Naidoo</td>
+                    <td>Sales</td>
+                    <td>Sales Representative</td>
+                    <td>keshav.naidoo@moderntech.com</td>
+                    <td>R60,000</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Zanele Khumalo</td>
+                    <td>Marketing</td>
+                    <td>Marketing Specialist</td>
+                    <td>zanele.khumalo@moderntech.com</td>
+                    <td>R58,000</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Sipho Zulu</td>
+                    <td>Design</td>
+                    <td>UI/UX Designer</td>
+                    <td>sipho.zulu@moderntech.com</td>
+                    <td>R65,000</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Naledi Moeketsi</td>
+                    <td>IT</td>
+                    <td>DevOps Engineer</td>
+                    <td>naledi.moeketsi@moderntech.com</td>
+                    <td>R72,000</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Farai Gumbo</td>
+                    <td>Marketing</td>
+                    <td>Content Strategist</td>
+                    <td>farai.gumbo@moderntech.com</td>
+                    <td>R56,000</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Karabo Dlamini</td>
+                    <td>Finance</td>
+                    <td>Accountant</td>
+                    <td>karabo.dlamini@moderntech.com</td>
+                    <td>R62,000</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Fatima Patel</td>
+                    <td>Support</td>
+                    <td>Customer Support Lead</td>
+                    <td>fatima.patel@moderntech.com</td>
+                    <td>R58,000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Employee Details</h3>
+        <details>
+            <summary>Sibongile Nkosi - Software Engineer</summary>
+            <p><strong>Employment History:</strong> Joined in 2015, promoted to Senior in 2018</p>
+            <p><strong>Department:</strong> Development</p>
+            <p><strong>Contact:</strong> sibongile.nkosi@moderntech.com</p>
+        </details>
+        
+        <details>
+            <summary>Lungile Moyo - HR Manager</summary>
+            <p><strong>Employment History:</strong> Joined in 2013, promoted to Manager in 2017</p>
+            <p><strong>Department:</strong> HR</p>
+            <p><strong>Contact:</strong> lungile.moyo@moderntech.com</p>
+        </details>
+
+        <h3>Add New Employee</h3>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p>
+                    <label>First Name: <input type="text" name="firstname"></label>
+                </p>
+                <p>
+                    <label>Last Name: <input type="text" name="lastname"></label>
+                </p>
+                <p>
+                    <label>Email: <input type="email" name="email"></label>
+                </p>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Employment Details</legend>
+                <p>
+                    <label>Department: 
+                        <select name="department">
+                            <option>Development</option>
+                            <option>QA</option>
+                            <option>HR</option>
+                            <option>Sales</option>
+                            <option>Marketing</option>
+                            <option>Design</option>
+                            <option>IT</option>
+                            <option>Finance</option>
+                            <option>Support</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>Position: <input type="text" name="position"></label>
+                </p>
+                <p>
+                    <label>Salary: <input type="number" name="salary"></label>
+                </p>
+            </fieldset>
+            <input type="submit" value="Add Employee">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>ModernTech HR System</strong></p>
+        <p>Proof of Concept - Front End Only</p>
+        <p>© 2024 ModernTech Solutions</p>
+        <p>
+            <a href="index.html">Dashboard</a> |
+            <a href="employees.html">Employees</a> |
+            <a href="payroll.html">Payroll</a> |
+            <a href="leave.html">Time Off</a> |
+            <a href="attendance.html">Attendance</a> |
+            <a href="reports.html">Reports</a>
+        </p>
+    </footer>
+</body>
+</html>

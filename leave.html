@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HR System - Time Off</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>ModernTech HR System</h1>
+        <p>Employee Management System</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="employees.html">Employees</a> |
+        <a href="payroll.html">Payroll</a> |
+        <a href="leave.html">Time Off</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="reports.html">Reports</a>
+    </nav>
+
+    <hr>
+
+    <!-- Time Off Section -->
+    <section id="leave">
+        <h2>Time Off Management</h2>
+        
+        <h3>Submit Time Off Request</h3>
+        <form>
+            <p>
+                <label>Employee Name: 
+                    <select>
+                        <option>Sibongile Nkosi</option>
+                        <option>Lungile Moyo</option>
+                        <option>Thabo Molefe</option>
+                        <option>Keshav Naidoo</option>
+                        <option>Zanele Khumalo</option>
+                        <option>Sipho Zulu</option>
+                        <option>Naledi Moeketsi</option>
+                        <option>Farai Gumbo</option>
+                        <option>Karabo Dlamini</option>
+                        <option>Fatima Patel</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Leave Type: 
+                    <select>
+                        <option>Vacation</option>
+                        <option>Sick Leave</option>
+                        <option>Personal</option>
+                        <option>Maternity/Paternity</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Start Date: <input type="date"></label>
+            </p>
+            <p>
+                <label>End Date: <input type="date"></label>
+            </p>
+            <p>
+                <label>Reason: <textarea rows="3"></textarea></label>
+            </p>
+            <input type="submit" value="Submit Request">
+        </form>
+
+        <h3>Pending Requests</h3>
+        <table border="1" width="100%">
+            <tr>
+                <th>Request ID</th>
+                <th>Employee</th>
+                <th>Type</th>
+                <th>Dates</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>TO001</td>
+                <td>Thabo Molefe</td>
+                <td>Vacation</td>
+                <td>Dec 10-15, 2024</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>TO002</td>
+                <td>Sibongile Nkosi</td>
+                <td>Sick Leave</td>
+                <td>Dec 12, 2024</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+
+        <h3>Recent Leave History</h3>
+        <table border="1" width="100%">
+            <tr>
+                <th>Employee</th>
+                <th>Leave Date</th>
+                <th>Reason</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>Sibongile Nkosi</td>
+                <td>2025-07-22</td>
+                <td>Sick Leave</td>
+                <td>Approved</td>
+            </tr>
+        </table>
+
+        <h3>Approve/Reject Requests</h3>
+        <form>
+            <p>
+                <label>Request ID: <input type="text" placeholder="TO001"></label>
+            </p>
+            <p>
+                <label>Action: 
+                    <select>
+                        <option>Approve</option>
+                        <option>Reject</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Comments: <textarea rows="2"></textarea></label>
+            </p>
+            <input type="submit" value="Submit Decision">
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>ModernTech HR System</strong></p>
+        <p>Proof of Concept - Front End Only</p>
+        <p>© 2024 ModernTech Solutions</p>
+        <p>
+            <a href="index.html">Dashboard</a> |
+            <a href="employees.html">Employees</a> |
+            <a href="payroll.html">Payroll</a> |
+            <a href="leave.html">Time Off</a> |
+            <a href="attendance.html">Attendance</a> |
+            <a href="reports.html">Reports</a>
+        </p>
+    </footer>
+</body>
+</html>
