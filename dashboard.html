@@ -4,13 +4,11 @@
     <title>HR System - Dashboard</title>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>ModernTech HR System</h1>
         <p>Employee Management System</p>
     </header>
 
-    <!-- Navigation Menu -->
     <nav>
         <a href="dashboard.html">Dashboard</a> |
         <a href="employees.html">Employees</a> |
@@ -20,57 +18,35 @@
         <a href="reports.html">Reports</a>
     </nav>
 
-    <hr>
-
-    <!-- Dashboard Section -->
     <section id="dashboard">
         <h2>Dashboard</h2>
         
-        <h3>Company Statistics</h3>
-        <table border="1" width="100%">
-            <tr>
-                <th>Metric</th>
-                <th>Value</th>
-            </tr>
-            <tr>
-                <td>Total Employees</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Active Today</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>Pending Requests</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>Next Payroll Date</td>
-                <td>December 15, 2024</td>
-            </tr>
-        </table>
+        <div id="stats-loading" class="loading">Loading statistics...</div>
+        <div id="company-stats">
+            <h3>Company Statistics</h3>
+            <table>
+                <tr><th>Metric</th><th>Value</th></tr>
+                <tr><td>Total Employees</td><td id="total-employees">0</td></tr>
+                <tr><td>Active Today</td><td id="active-today">0</td></tr>
+                <tr><td>Pending Leave Requests</td><td id="pending-requests">0</td></tr>
+                <tr><td>Next Payroll Date</td><td>December 15, 2024</td></tr>
+            </table>
+        </div>
 
         <h3>Quick Links</h3>
         <ul>
             <li><a href="employees.html">View All Employees</a></li>
             <li><a href="payroll.html">Process Payroll</a></li>
-            <li><a href="timeoff.html">Approve Time Off Requests</a></li>
+            <li><a href="leave.html">Approve Time Off Requests</a></li>
         </ul>
 
         <h3>Recent Activity</h3>
-        <ul>
-            <li>Thabo Molefe submitted vacation request</li>
-            <li>Monthly payroll completed for November</li>
-            <li>New employee: Farai Gumbo joined</li>
-        </ul>
+        <ul id="recent-activity"></ul>
     </section>
 
-    <hr>
-
-    <!-- Footer -->
     <footer>
         <p><strong>ModernTech HR System</strong></p>
-        <p>Proof of Concept - Front End Only</p>
+        <p>Dynamic Version - Loads data from JSON</p>
         <p>© 2024 ModernTech Solutions</p>
         <p>
             <a href="dashboard.html">Dashboard</a> |

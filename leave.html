@@ -50,7 +50,11 @@
                         <option>Vacation</option>
                         <option>Sick Leave</option>
                         <option>Personal</option>
+                        <option>Family Responsibility</option>
+                        <option>Medical Appointment</option>
+                        <option>Bereavement</option>
                         <option>Maternity/Paternity</option>
+                        <option>Childcare</option>
                     </select>
                 </label>
             </p>
@@ -66,27 +70,48 @@
             <input type="submit" value="Submit Request">
         </form>
 
-        <h3>Pending Requests</h3>
+        <h3>Current Pending Requests</h3>
         <table border="1" width="100%">
             <tr>
-                <th>Request ID</th>
                 <th>Employee</th>
-                <th>Type</th>
-                <th>Dates</th>
+                <th>Leave Type</th>
+                <th>Date</th>
+                <th>Reason</th>
                 <th>Status</th>
             </tr>
             <tr>
-                <td>TO001</td>
+                <td>Sibongile Nkosi</td>
+                <td>Sick Leave</td>
+                <td>2025-07-22</td>
+                <td>Sick Leave</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
                 <td>Thabo Molefe</td>
-                <td>Vacation</td>
-                <td>Dec 10-15, 2024</td>
+                <td>Personal</td>
+                <td>2024-12-05</td>
+                <td>Personal</td>
                 <td>Pending</td>
             </tr>
             <tr>
-                <td>TO002</td>
-                <td>Sibongile Nkosi</td>
-                <td>Sick Leave</td>
-                <td>Dec 12, 2024</td>
+                <td>Zanele Khumalo</td>
+                <td>Childcare</td>
+                <td>2024-12-01</td>
+                <td>Childcare</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Naledi Moeketsi</td>
+                <td>Vacation</td>
+                <td>2025-07-22</td>
+                <td>Vacation</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Fatima Patel</td>
+                <td>Vacation</td>
+                <td>2024-12-03</td>
+                <td>Vacation</td>
                 <td>Pending</td>
             </tr>
         </table>
@@ -105,12 +130,43 @@
                 <td>Sick Leave</td>
                 <td>Approved</td>
             </tr>
+            <tr>
+                <td>Lungile Moyo</td>
+                <td>2025-07-15</td>
+                <td>Family Responsibility</td>
+                <td>Denied</td>
+            </tr>
+            <tr>
+                <td>Thabo Molefe</td>
+                <td>2025-07-10</td>
+                <td>Medical Appointment</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>Keshav Naidoo</td>
+                <td>2025-07-20</td>
+                <td>Bereavement</td>
+                <td>Approved</td>
+            </tr>
+            <tr>
+                <td>Sipho Zulu</td>
+                <td>2025-07-18</td>
+                <td>Sick Leave</td>
+                <td>Approved</td>
+            </tr>
         </table>
 
         <h3>Approve/Reject Requests</h3>
         <form>
             <p>
-                <label>Request ID: <input type="text" placeholder="TO001"></label>
+                <label>Select Request: 
+                    <select>
+                        <option>Thabo Molefe - Personal (2024-12-05)</option>
+                        <option>Zanele Khumalo - Childcare (2024-12-01)</option>
+                        <option>Naledi Moeketsi - Vacation (2025-07-22)</option>
+                        <option>Fatima Patel - Vacation (2024-12-03)</option>
+                    </select>
+                </label>
             </p>
             <p>
                 <label>Action: 
@@ -132,7 +188,7 @@
     <!-- Footer -->
     <footer>
         <p><strong>ModernTech HR System</strong></p>
-        <p>Proof of Concept - Front End Only</p>
+        <p>Pure HTML Version - Static Data</p>
         <p>© 2024 ModernTech Solutions</p>
         <p>
             <a href="dashboard.html">Dashboard</a> |
